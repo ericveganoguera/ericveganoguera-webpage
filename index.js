@@ -23,7 +23,7 @@ navLinks.addEventListener("click", esconderLinks);
 
 //Se esconde la barra de navegacion cuando la pantalla es pequeña
 function esconderLinks() {
-    if (window.innerWidth <= 600) {
+    if (window.innerWidth <= 1000) {
       navLinks.classList.toggle("visible");
     }
 }

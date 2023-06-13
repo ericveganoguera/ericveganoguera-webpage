@@ -207,22 +207,21 @@ a {
     .nav-menu {
         display: flex;
     }
-    .container{
-        margin-top: -41px;
-    }
     .ul-links {
         position: absolute;
         width: 100vw;
         height: 100vh;
         flex-direction: column;
         background: rgba(0, 0, 0, 0.9);
-        background: red;
         font-size: 30px;
         margin-left: -20px;
         z-index: 1;
         transform: translateX(100%);
         opacity: 0;
         transition: all 0.5s;
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 70vh;
     }
 
     .visible {
@@ -260,11 +259,6 @@ a {
         font-size: 20px;
     }
 
-    .ul-links {
-        padding-left: 0px;
-        margin-top: 30px;
-    }
-
     .sobremi-grid {
         display: block;
     }
@@ -274,10 +268,6 @@ a {
         margin: 30px auto;
         grid-gap: 20px;
     }
-
-    /*.contacto-grid{
-               display: block;
-    }*/
     .contacto-item {
         -ms-flex: 50%;
         flex: 50%;
