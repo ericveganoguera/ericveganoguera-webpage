@@ -28,8 +28,6 @@ function esconderLinks() {
     }
 }
 
-
-
 let observer = new IntersectionObserver(function (entries, self) {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
@@ -57,12 +55,12 @@ function intersectionHandler(entry) {
     }
 }  
 
-ScrollReveal().reveal(".nav-bar", { delay: 250 });
-ScrollReveal().reveal(".inicio-perfil", { delay: 350 });
-ScrollReveal().reveal(".inicio-titulo", { delay: 350 });
-ScrollReveal().reveal(".inicio-titulo-secundario", { delay: 550 });
-ScrollReveal().reveal(".seccion-titulo", { delay: 250 });
-ScrollReveal().reveal(".seccion-subtitulo", { delay: 350 });
-ScrollReveal().reveal(".sobremi-descripcion", { delay: 450 });
-ScrollReveal().reveal(".sobremi-habilidades", { delay: 450 });
-ScrollReveal().reveal(".contacto-grid", { delay: 450 });
+ScrollReveal().reveal(".nav-bar", { delay: 150 });
+ScrollReveal().reveal(".inicio-perfil", { delay: 250 });
+ScrollReveal().reveal(".inicio-titulo", { delay: 250 });
+ScrollReveal().reveal(".inicio-titulo-secundario", { delay: 350 });
+ScrollReveal().reveal(".seccion-titulo", { delay: 150 });
+ScrollReveal().reveal(".seccion-subtitulo", { delay: 250 });
+ScrollReveal().reveal(".sobremi-descripcion", { delay: 350 });
+ScrollReveal().reveal(".sobremi-habilidades", { delay: 350 });
+ScrollReveal().reveal(".contacto-grid", { delay: 350 });
