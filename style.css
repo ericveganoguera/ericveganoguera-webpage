@@ -195,6 +195,10 @@ hr {
     border-radius: 5px;
 }
 
+.button-cv:hover{
+    background-color: rgb(101, 29, 29);
+}
+
 
 .habilidad-titulo {
     color: var(--grey);
@@ -284,6 +288,10 @@ hr {
     padding: 40px;
 }
 
+.contacto-item i:hover{
+    color: rgb(173, 48, 48);
+}
+
 .contacto-item a {
     margin-top: 8px;
     vertical-align: middle;
@@ -296,6 +304,21 @@ hr {
     padding: 5px;
     transition: all 0.3s;
 }
+
+/* Pie de página */
+
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  footer p {
+    font-size: 1.2em;
+    margin: 0;
+  }
+  
 
 @media screen and (max-width: 991px) {
     .nav-menu {
@@ -369,6 +392,9 @@ hr {
         flex: 50%;
         max-width: 50%;
     }
+    .portfolio-grid {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media screen and (max-width:600px) {
@@ -384,6 +410,9 @@ hr {
 
     .download-cv {
         flex-wrap: wrap;
+    }
+    .portfolio-grid {
+        grid-template-columns: 1fr;
     }
 }
 
