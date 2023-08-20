@@ -11,10 +11,6 @@ const config = {
 //La barra de navegacion se hace opaca cuando se scrollea  
 window.addEventListener("scroll", function () {
   window.scrollY > 100 && (navbar.style.background = `rgba(0,0,0,0.9)`);
-  window.scrollY > 80 && window.scrollY < 100 && (navbar.style.background = `rgba(0,0,0,0.7)`);
-  window.scrollY > 60 && window.scrollY < 80 && (navbar.style.background = `rgba(0,0,0,0.6)`);
-  window.scrollY > 40 && window.scrollY < 60 && (navbar.style.background = `rgba(0,0,0,0.4)`);
-  window.scrollY > 20 && window.scrollY < 40 && (navbar.style.background = `rgba(0,0,0,0.2)`);
   window.scrollY < 20 && (navbar.style.background = `transparent`);
 });
 
@@ -27,7 +23,7 @@ function esconderLinks() {
       navLinks.classList.toggle("visible");
     }
 }
-
+/* 
 let observer = new IntersectionObserver(function (entries, self) {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
@@ -53,7 +49,7 @@ function intersectionHandler(entry) {
     if (shouldBeActive) {
         shouldBeActive.classList.add("active"); 
     }
-}  
+}   */
 
 ScrollReveal().reveal(".nav-bar", { delay: 150 });
 ScrollReveal().reveal(".inicio-perfil", { delay: 250 });

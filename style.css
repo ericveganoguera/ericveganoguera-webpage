@@ -44,7 +44,6 @@ hr {
 
 .nav-logo {
     padding: 10px;
-    font-size: 24px;
     display: flex;
     align-items: center;
 }
@@ -58,10 +57,11 @@ hr {
     height: 60px;
     width: 100%;
     z-index: 5;
+    font-size: 18px;
 }
 
 .container {
-    width: 100%;
+    width: 90%;
     display: inherit;
     max-width: 1200px;
     justify-content: inherit;
@@ -78,9 +78,6 @@ hr {
 }
 
 .ul-links {
-    list-style: none;
-    display: flex;
-    height: 100%;
     align-items: center;
 }
 
@@ -112,10 +109,10 @@ hr {
     font-size: 24px;
 }
 
-.active a {
+/* .active a {
     color: var(--red);
     transition: 0.5s;
-}
+} */
 
 .inicio {
     min-height: 100vh;
@@ -150,6 +147,7 @@ hr {
     font-size: 60px;
     text-shadow: 1px 1px black;
     color: var(--red);
+    margin-bottom: 30px;
 }
 
 .inicio-titulo-secundario {
@@ -158,13 +156,17 @@ hr {
     text-shadow: 1px 1px black;
 }
 
-
+.inicio-contacto-item i,
+.inicio-contacto-item p {
+    color: #f5f5f5;
+    padding: 5px;
+    transition: all 0.3s;
+}
 
 .seccion-titulo {
     color: var(--grey);
     font-size: 35px;
     margin-bottom: 30px;
-    display: flex;
 }
 
 .seccion-subtitulo {
@@ -172,6 +174,7 @@ hr {
     text-align: start;
     margin-bottom: 20px;
 }
+
 
 
 .sobremi-descripcion {
@@ -195,7 +198,7 @@ hr {
     border-radius: 5px;
 }
 
-.button-cv:hover{
+.button-cv:hover {
     background-color: rgb(101, 29, 29);
 }
 
@@ -226,25 +229,41 @@ hr {
 /* PORTFOLIO */
 
 .portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .portfolio-item {
     position: relative;
     overflow: hidden;
-    justify-self: center;
+    background-color: rgb(41, 41, 41);
+    border-radius: 5%;
+    transition: transform 0.3s;
+    width: 40%;
+    height: 20%;
+    margin: 20px;
+
+    & img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    & *:hover {
+        transition: 0.3s;
+        transform: scale(1.03);
+
+        & img {
+            opacity: 0.5;
+            transition: 0s;
+        }
+    }
 }
 
-.portfolio-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    transition: opacity 0.5s;
-}
 
+/* 
 .portfolio-item:hover img{
   opacity: 0.2;
 }
@@ -262,7 +281,7 @@ hr {
 
 .portfolio-item:hover:before{
     animation: showText 0.5s forwards;
-}
+} */
 
 
 /* CONTACTO */
@@ -273,7 +292,8 @@ hr {
     max-width: 100px;
 }
 
-.contacto-grid {
+.contacto-grid,
+.inicio-contacto-grid {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
@@ -281,7 +301,8 @@ hr {
     padding: 0 4px;
 }
 
-.contacto-item {
+.contacto-item,
+.inicio-contacto-item {
     -ms-flex: 33%;
     flex: 33%;
     max-width: 33%;
@@ -289,15 +310,11 @@ hr {
     padding: 40px;
 }
 
-.contacto-item i:hover{
+.contacto-item i:hover,
+.inicio-contacto-grid i:hover {
     color: rgb(173, 48, 48);
 }
 
-.contacto-item a {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
-}
 
 .contacto-item i,
 .contacto-item p {
@@ -313,13 +330,13 @@ footer {
     color: #fff;
     padding: 10px;
     text-align: center;
-  }
-  
-  footer p {
+}
+
+footer p {
     font-size: 1.2em;
     margin: 0;
-  }
-  
+}
+
 
 @media screen and (max-width: 991px) {
     .nav-menu {
@@ -328,19 +345,20 @@ footer {
 
     .ul-links {
         position: absolute;
+        left: 0;
+        top: 0;
         width: 100vw;
         height: 100vh;
         flex-direction: column;
         background: rgba(0, 0, 0, 0.9);
-        font-size: 30px;
-        margin-left: -20px;
+        font-size: 40px;
         z-index: 1;
         transform: translateX(100%);
         opacity: 0;
         transition: all 0.5s;
         display: flex;
         justify-content: space-around;
-        padding-bottom: 70vh;
+        padding-bottom: 50vh;
     }
 
     .visible {
@@ -393,6 +411,7 @@ footer {
         flex: 50%;
         max-width: 50%;
     }
+
     .portfolio-grid {
         grid-template-columns: 1fr 1fr;
     }
@@ -412,6 +431,7 @@ footer {
     .download-cv {
         flex-wrap: wrap;
     }
+
     .portfolio-grid {
         grid-template-columns: 1fr;
     }
@@ -420,9 +440,10 @@ footer {
 
 @keyframes showText {
     0% {
-      opacity: 0;
+        opacity: 0;
     }
+
     100% {
-      opacity: 1;
+        opacity: 1;
     }
-  }
+}
