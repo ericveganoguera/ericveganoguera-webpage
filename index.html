@@ -20,25 +20,35 @@
       <div class="container">
         <div class="nav-logo">
           <p class="nav-title">
-            <a href="#inicio">ERIC</a>
+            <a href="#inicio" class="text-hover-red">ERIC</a>
           </p>
         </div>
         <div class="nav-menu">
           <i class="fa fa-bars"></i>
         </div>
         <ul class="ul-links">
-          <li class="ul-link <!-- active -->" data-ref="inicio">
-            <a href="#inicio">Inicio</a>
+          <li class="ul-link" data-ref="inicio">
+            <a href="#inicio" class="text-hover-red">Inicio</a>
           </li>
           <li class="ul-link" data-ref="sobremi">
-            <a href="#sobremi">Sobre mi</a>
+            <a href="#sobremi" class="text-hover-red">Sobre mi</a>
           </li>
           <li class="ul-link" data-ref="portfolio">
-            <a href="#portfolio">Proyectos</a>
+            <a href="#portfolio" class="text-hover-red">Proyectos</a>
           </li>
           <li class="ul-link" data-ref="contacto">
-            <a href="#contacto">Contacto</a>
+            <a href="#contacto" class="text-hover-red">Contacto</a>
           </li>
+
+          <a
+            href="./Èric Vega - Español.pdf"
+            download="Eric Vega CV Español"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="nav-button-cv"
+          >
+            Descargar CV
+          </a>
         </ul>
       </div>
     </nav>
@@ -60,7 +70,7 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i class="fa fa-envelope" ></i>
+              <i class="fa fa-envelope"></i>
             </a>
           </div>
           <div class="inicio-contacto-item">
@@ -69,7 +79,7 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i class="fa fa-github" ></i>
+              <i class="fa fa-github"></i>
             </a>
           </div>
           <div class="inicio-contacto-item">
@@ -78,7 +88,7 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i class="fa fa-linkedin-square" ></i>
+              <i class="fa fa-linkedin-square"></i>
             </a>
           </div>
         </div>
@@ -90,43 +100,15 @@
         <hr />
         <div class="sobremi-descripcion">
           <p>
-            Me llamo Èric, apasionado de la tecnología y graduado del bootcamp
-            de Ironhack. Soy de España.
+            Me llamo <b>Èric</b>, vivo en españa y soy un apasionado de la
+            tecnología y graduado del bootcamp Web Development de Ironhack.
           </p>
-          <br />
           <p>
-            Me considero una persona muy trabajadora. Las personas que me
-            conocen dirían que soy una persona muy tímida con un gran corazón,
-            ya que siempre trato de dar más de lo que recibo sin pedir nada a
-            cambio, y siempre estoy dispuesto a ayudar a los demás.
+            Me considero una persona muy trabajadora a la vez que persona muy
+            tímida con un gran corazón, ya que siempre trato de dar más de lo
+            que recibo sin pedir nada a cambio. Siempre estoy dispuesto a ayudar
+            a los demás.
           </p>
-        </div>
-        <div class="sobremi-habilidades">
-          <br />
-          <h2 class="habilidad-titulo">Habilidades y lenguajes</h2>
-          <div class="habilidad-habilidades">
-            <!-- Front End Skills -->
-
-            <div class="habilidad-item">
-              <i><img src="./Assets/html5.webp" alt="HTML5 icon" /> </i>
-              <i><img src="/Assets/css3.webp" alt="CSS3 icon" /> </i>
-              <i><img src="/Assets/ts.webp" alt="TypeScript icon" /> </i>
-              <i><img src="/Assets/React.webp" alt="React icon" /> </i>
-            </div>
-
-            <div class="habilidad-item">
-              <i><img src="/Assets/NodeJS.webp" alt="NodeJS icon" /> </i>
-              <i><img src="/Assets/Expressjs.webp" alt="Expressjs icon" /> </i>
-            </div>
-
-            <div class="habilidad-item">
-              <i><img src="/Assets/MySQL.webp" alt="MySQL icon" /> </i>
-              <i><img src="/Assets/MongoDB.webp" alt="MongoDB icon" /> </i>
-            </div>
-            <div class="habilidad-item">
-              <i><img src="/Assets/rspec.webp" alt="RSpec icon" /> </i>
-            </div>
-          </div>
         </div>
         <div class="download-cv">
           <a
@@ -136,7 +118,6 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i class="fas fa-file-download"></i>
             Descargar CV
           </a>
           <a
@@ -146,9 +127,47 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i class="fas fa-file-download"></i>
             Download CV
           </a>
+        </div>
+        <div class="sobremi-habilidades">
+          <h2 class="habilidad-titulo">Habilidades y lenguajes</h2>
+          <div class="habilidad-grid">
+            <div class="habilidad-item">
+              <h1>Frontend</h1>
+              <hr />
+              <div class="icon-grid">
+                <i><img src="./Assets/html5.webp" alt="HTML5 icon" /></i>
+                <i><img src="/Assets/css3.webp" alt="CSS3 icon" /></i>
+                <i><img src="/Assets/ts.webp" alt="TypeScript icon" /></i>
+                <i><img src="/Assets/React.webp" alt="React icon" /></i>
+              </div>
+            </div>
+            <div class="habilidad-item">
+              <h1>Backend</h1>
+              <hr />
+              <div class="icon-grid">
+                <i><img src="/Assets/NodeJS.webp" alt="NodeJS icon" /></i>
+                <i><img src="/Assets/Expressjs.webp" alt="Expressjs icon" /></i>
+              </div>
+            </div>
+            <div class="habilidad-item">
+              <h1>Database</h1>
+              <hr />
+              <div class="icon-grid">
+                <i><img src="/Assets/MySQL.webp" alt="MySQL icon" /></i>
+                <i><img src="/Assets/MongoDB.webp" alt="MongoDB icon" /></i>
+                <i><img src="/Assets/Postgresql.webp" alt="MongoDB icon" /></i>
+              </div>
+            </div>
+            <div class="habilidad-item">
+              <h1>Testing</h1>
+              <hr />
+              <div class="icon-grid">
+                <i><img src="/Assets/rspec.webp" alt="RSpec icon" /></i>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
