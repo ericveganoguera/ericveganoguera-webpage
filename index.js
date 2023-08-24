@@ -51,12 +51,13 @@ function intersectionHandler(entry) {
     }
 }   */
 
-ScrollReveal().reveal(".nav-bar", { delay: 150 });
 ScrollReveal().reveal(".inicio-perfil", { delay: 250 });
 ScrollReveal().reveal(".inicio-titulo", { delay: 250 });
 ScrollReveal().reveal(".inicio-titulo-secundario", { delay: 350 });
 ScrollReveal().reveal(".seccion-titulo", { delay: 150 });
 ScrollReveal().reveal(".seccion-subtitulo", { delay: 250 });
+ScrollReveal().reveal(".portfolio-grid", { delay: 350 });
 ScrollReveal().reveal(".sobremi-descripcion", { delay: 350 });
 ScrollReveal().reveal(".sobremi-habilidades", { delay: 350 });
 ScrollReveal().reveal(".contacto-grid", { delay: 350 });
+ScrollReveal().reveal(".inicio-contacto-grid", { delay: 350 });
