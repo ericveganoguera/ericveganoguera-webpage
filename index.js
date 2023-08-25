@@ -23,33 +23,6 @@ function esconderLinks() {
       navLinks.classList.toggle("visible");
     }
 }
-/* 
-let observer = new IntersectionObserver(function (entries, self) {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        intersectionHandler(entry);
-      }
-    });
-}, config);
-
-sections.forEach((section) => {
-  observer.observe(section);
-});
-
-function intersectionHandler(entry) {
-    const id = entry.target.id;
-    const currentlyActive = document.querySelector(".ul-links  .active");
-    const shouldBeActive = document.querySelector(
-        ".ul-links [data-ref=" + id + "]"
-    );
-
-    if (currentlyActive) {
-        currentlyActive.classList.remove("active");
-    }
-    if (shouldBeActive) {
-        shouldBeActive.classList.add("active"); 
-    }
-}   */
 
 ScrollReveal().reveal(".inicio-perfil", { delay: 250 });
 ScrollReveal().reveal(".inicio-titulo", { delay: 250 });

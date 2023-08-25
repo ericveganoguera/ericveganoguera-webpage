@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
 
-
-
 * {
     margin: 0;
     padding: 0;
@@ -23,7 +21,7 @@ body {
 }
 
 section {
-    padding: 70px 0 0;
+    padding: 100px 0 100px;
     text-align: center;
     background: white;
 }
@@ -39,7 +37,7 @@ a {
 
 hr {
     border: 1px solid var(--grey);
-    margin: 30px 25%;
+    margin: 30px 50% 30px 0; 
 }
 
 .nav-logo {
@@ -167,6 +165,7 @@ hr {
     color: var(--grey);
     font-size: 48px;
     margin-bottom: 30px;
+    text-align: left;
 }
 
 .seccion-subtitulo {
@@ -176,19 +175,24 @@ hr {
 }
 
 
-
 .sobremi-descripcion {
     text-align: left;
     color: var(--grey);
-    line-height: 60px;
+    line-height: 1.5;
     font-size: 1.2em;
+    width: 80%;
+
+    & * {
+        margin-bottom: 20px;
+    }
 }
+
 
 .download-cv {
     display: flex;
     justify-content: center;
     gap: 50px;
-    margin: 30px 0;
+    margin: 50px 0 100px;
 }
 
 .button-cv, .nav-button-cv {
@@ -213,7 +217,7 @@ hr {
 .habilidad-titulo {
     color: var(--grey);
     text-align: left;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .habilidad-grid {
