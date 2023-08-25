@@ -165,7 +165,7 @@ hr {
     color: var(--grey);
     font-size: 48px;
     margin-bottom: 30px;
-    text-align: left;
+    text-align: left; 
 }
 
 .seccion-subtitulo {
@@ -214,7 +214,7 @@ hr {
 }
 
 
-.habilidad-titulo {
+.habilidad-titulo { 
     color: var(--grey);
     text-align: left;
     margin-bottom: 40px;
