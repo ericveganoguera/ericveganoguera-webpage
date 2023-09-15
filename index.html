@@ -45,12 +45,15 @@
         <ul class="ul-links">
           <li class="ul-link" data-ref="inicio">
             <a href="#inicio" class="text-hover-red">Inicio</a>
-          </li>
-          <li class="ul-link" data-ref="sobremi">
-            <a href="#sobremi" class="text-hover-red">Sobre mi</a>
+            <li class="ul-link" data-ref="sobremi">
+              <a href="#sobremi" class="text-hover-red">Sobre mi</a>
+            </li>
           </li>
           <li class="ul-link" data-ref="portfolio">
             <a href="#portfolio" class="text-hover-red">Proyectos</a>
+          </li>
+          <li class="ul-link" data-ref="portfolio">
+            <a href="#habilidades" class="text-hover-red">Habilidades</a>
           </li>
           <li class="ul-link" data-ref="contacto">
             <a href="#contacto" class="text-hover-red">Contacto</a>
@@ -146,55 +149,13 @@
             Download CV
           </a>
         </div>
-        <div class="sobremi-habilidades">
-          <h2 class="habilidad-titulo">Habilidades y lenguajes</h2>
-          <div class="habilidad-grid">
-            <div class="habilidad-item">
-              <h2>Frontend</h2>
-              <hr />
-              <div class="icon-grid">
-                <i><img src="./Assets/html5.webp" alt="HTML5 icon" /></i>
-                <i><img src="/Assets/css3.webp" alt="CSS3 icon" /></i>
-                <i><img src="/Assets/ts.webp" alt="TypeScript icon" /></i>
-                <i><img src="/Assets/React.webp" alt="React icon" /></i>
-              </div>
-            </div>
-            <div class="habilidad-item">
-              <h2>Backend</h2>
-              <hr />
-              <div class="icon-grid">
-                <i><img src="/Assets/NodeJS.webp" alt="NodeJS icon" /></i>
-                <i><img src="/Assets/Expressjs.webp" alt="Expressjs icon" /></i>
-              </div>
-            </div>
-            <div class="habilidad-item">
-              <h2>Database</h2>
-              <hr />
-              <div class="icon-grid">
-                <i><img src="/Assets/MySQL.webp" alt="MySQL icon" /></i>
-                <i><img src="/Assets/MongoDB.webp" alt="MongoDB icon" /></i>
-                <i><img src="/Assets/Postgresql.webp" alt="MongoDB icon" /></i>
-              </div>
-            </div>
-            <div class="habilidad-item">
-              <h2>Testing</h2>
-              <hr />
-              <div class="icon-grid">
-                <i><img src="/Assets/rspec.webp" alt="RSpec icon" /></i>
-              </div>
-            </div>
-          </div>
-        </div>
+        
       </div>
     </section>
-    <section id="portfolio">
+    <!-- <section id="portfolio">
       <div class="container">
         <h2 class="seccion-titulo">Proyectos</h2>
         <hr />
-        <h3 class="seccion-subtitulo">
-          Aqui podrás ver los proyectos en los que he trabajado y los que estan
-          en progreso.
-        </h3>
         <div class="portfolio-grid">
           <div class="portfolio-item">
             <img src="./Assets/spaceshooter.webp" alt="Space Shooter!" />
@@ -250,14 +211,14 @@
               </a>
             </div>
           </div>
-          <!-- <a
+          <a
             href="https://github.com/ericveganoguera/calculator"
             target="_blank"
             class="portfolio-item"
             alt="Calculator"
           >
             <img src="./Assets/calculator.webp" alt="Calculator"
-          /></a> -->
+          /></a>
           <div class="portfolio-item">
             <img src="./Assets/image-uploader.webp" alt="Image Uploader" />
             <p>Image Uplaoder</p>
@@ -278,14 +239,263 @@
           </div>
         </div>
       </div>
+    </section>-->
+    <section id="portfolio">
+      <div class="container">
+        <h2 class="seccion-titulo">Proyectos</h2>
+        <hr />
+        <div class="card-grid">
+            <!-- Card -->
+            <div class="card">
+              <div class="card-header">
+                <img src="./Assets/spaceshooter.webp" alt="Space Shooter!" />
+                <div class="card-header-title">
+                  <h3 class="card-title text-white">Space Shooter!</h3>
+                </div>
+
+                <div class="card-header-skills">
+                  <div class="skill-html">
+                    <p>HTML5</p>
+                    <div class="skill-liner"></div>
+                  </div>
+                  <div class="skill-css">
+                    <p>CSS3</p>
+                    <div class="skill-liner"></div>
+                  </div>
+                  <div class="skill-js">
+                    <p>JavaScript</p>
+                    <div class="skill-liner"></div>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="card-body">
+                <p class="card-text">This is my first game with Javascript, HTML and CSS
+
+                  It's a vertical spaceship shooter!</p>
+              </div>
+        
+              <div class="card-footer">
+                <div class="card-footer-link">
+                  <a
+                    href="https://github.com/ericveganoguera/ProjectGame"
+                    target="_blank"
+                    alt="Space Shooter! Repository"
+                    >Repository</a
+                  >
+                  <div class="skill-liner"></div>
+                </div>
+                <div class="card-footer-link">
+                  <a
+                    href="https://ericveganoguera.github.io/ProjectGame/"
+                    target="_blank"
+                    alt="Space Shooter! Live"
+                    >Live</a
+                  >
+                  <div class="skill-liner"></div>
+                </div>
+                
+              </div>
+            </div>
+            <!-- Card -->
+            <div class="card">
+              <div class="card-header">
+                <img src="./Assets/lineupsproject.webp" alt="LineUps Project" />
+                <div class="card-header-title">
+                  <h3 class="card-title text-white">Valorant LineUps</h3>
+                </div>
+
+                <div class="card-header-skills">
+                  <div class="skill-handlebars">
+                    <p>HandleBars</p>
+                    <div class="skill-liner"></div>
+                  </div>
+                  <div class="skill-bootstrap">
+                    <p>Bootstrap</p>
+                    <div class="skill-liner"></div>
+                  </div>
+                  <div class="skill-js">
+                    <p>JavaScript</p>
+                    <div class="skill-liner"></div>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="card-body">
+                <p class="card-text">In this web page you can see a lot information from Valorant like: Lineups, Maps, Agents and Aim practice </p>
+              </div>
+        
+              <div class="card-footer">
+                <div class="card-footer-link">
+                  <a
+                href="https://github.com/Alex-Eric/LineUpsProject"
+                target="_blank"
+                alt="LineUps Project Repository"
+                >Repository
+              </a>
+                  <div class="skill-liner"></div>
+                </div>
+                <div class="card-footer-link">
+                  <a
+                href="https://lineups-project.adaptable.app/"
+                target="_blank"
+                alt="LineUps Project Live"
+                >Live
+              </a>
+                  <div class="skill-liner"></div>
+                </div>
+                
+              </div>
+            </div>
+            <!-- Card -->
+            <div class="card">
+              <div class="card-header">
+                <img src="./Assets/fitnessapp.webp" alt="Fitness App" />
+                <div class="card-header-title">
+                  <h3 class="card-title text-white">Fitness App</h3>
+                </div>
+
+                <div class="card-header-skills">
+                  <div class="skill-nodejs">
+                    <p>NodeJS</p>
+                    <div class="skill-liner"></div>
+                  </div>
+                  <div class="skill-react">
+                    <p>React</p>
+                    <div class="skill-liner"></div>
+                  </div>
+                  <div class="skill-bootstrap">
+                    <p>Bootstrap</p>
+                    <div class="skill-liner"></div>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="card-body">
+                <p class="card-text">This fitness app provides a variety of features to help you achieve your fitness goals</p>
+              </div>
+        
+              <div class="card-footer">
+                <div class="card-footer-link">
+                  <a
+                href="https://github.com/Alex-Eric/fitness-app-client"
+                target="_blank"
+                alt="Fitness App Repository"
+                >Repository
+              </a>
+                  <div class="skill-liner"></div>
+                </div>
+                <div class="card-footer-link">
+                  <a
+                href="https://fitness-app-workouts.netlify.app/"
+                target="_blank"
+                alt="Fitness App Live"
+                >Live
+              </a>
+                  <div class="skill-liner"></div>
+                </div>
+                
+              </div>
+            </div>
+            <!-- Card -->
+            <div class="card">
+              <div class="card-header">
+                <img src="./Assets/image-uploader.webp" alt="Image Uploader" />
+                <div class="card-header-title">
+                  <h3 class="card-title text-white">Image Uplaoder</h3>
+                </div>
+
+                <div class="card-header-skills">
+                  <div class="skill-react">
+                    <p>React</p>
+                    <div class="skill-liner"></div>
+                  </div>
+                  <div class="skill-html">
+                    <p>HTML5</p>
+                    <div class="skill-liner"></div>
+                  </div>
+                  <div class="skill-css">
+                    <p>CSS3</p>
+                    <div class="skill-liner"></div>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="card-body">
+                <p class="card-text">Simple website to upload your image and share with everybody!</p>
+              </div>
+        
+              <div class="card-footer">
+                <div class="card-footer-link">
+                  <a
+                href="https://github.com/ericveganoguera/image-uploader"
+                target="_blank"
+                alt="Image Uploader Repository"
+                >Repository
+              </a>
+                  <div class="skill-liner"></div>
+                </div>
+                <div class="card-footer-link">
+                  <a
+                href="https://upload-your-image.netlify.app/"
+                target="_blank"
+                alt="Image Uploader Live"
+                >Live
+              </a>
+                  <div class="skill-liner"></div>
+                </div>
+                
+              </div>
+            </div>
+        </div>
+      </div>
+    </section> 
+    <section id="habilidades" class="sobremi-habilidades">
+      <div class="container">
+        <h2 class="seccion-titulo">Habilidades y lenguajes</h2>
+        <hr>
+        <div class="habilidad-grid">
+          <div class="habilidad-item">
+            <h2>Frontend</h2>
+            <hr />
+            <div class="icon-grid">
+              <i><img src="./Assets/html5.webp" alt="HTML5 icon" /></i>
+              <i><img src="/Assets/css3.webp" alt="CSS3 icon" /></i>
+              <i><img src="/Assets/ts.webp" alt="TypeScript icon" /></i>
+              <i><img src="/Assets/React.webp" alt="React icon" /></i>
+            </div>
+          </div>
+          <div class="habilidad-item">
+            <h2>Backend</h2>
+            <hr />
+            <div class="icon-grid">
+              <i><img src="/Assets/NodeJS.webp" alt="NodeJS icon" /></i>
+              <i><img src="/Assets/Expressjs.webp" alt="Expressjs icon" /></i>
+            </div>
+          </div>
+          <div class="habilidad-item">
+            <h2>Database</h2>
+            <hr />
+            <div class="icon-grid">
+              <i><img src="/Assets/MySQL.webp" alt="MySQL icon" /></i>
+              <i><img src="/Assets/MongoDB.webp" alt="MongoDB icon" /></i>
+              <i><img src="/Assets/Postgresql.webp" alt="MongoDB icon" /></i>
+            </div>
+          </div>
+          <div class="habilidad-item">
+            <h2>Testing</h2>
+            <hr />
+            <div class="icon-grid">
+              <i><img src="/Assets/rspec.webp" alt="RSpec icon" /></i>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="contacto">
       <div class="container">
         <h2 class="seccion-titulo">Contacto</h2>
         <hr />
-        <h3 class="seccion-subtitulo">
-          Contacteme si cree que podemos trabajar juntos
-        </h3>
         <div class="contacto-grid">
           <div class="contacto-item">
             <a

@@ -3,6 +3,7 @@ const navLinks = document.querySelector(".ul-links");
 //const homebg = document.querySelector(".inicio-bg");
 const menu = document.querySelector(".nav-menu");
 const sections = document.querySelectorAll("section");
+const hr = document.querySelectorAll("hr");
 const config = {
     rootMargin: "0px",
     threshold: [0.6, 0.9],
@@ -29,8 +30,10 @@ ScrollReveal().reveal(".inicio-titulo", { delay: 250 });
 ScrollReveal().reveal(".inicio-titulo-secundario", { delay: 350 });
 ScrollReveal().reveal(".seccion-titulo", { delay: 150 });
 ScrollReveal().reveal(".seccion-subtitulo", { delay: 250 });
-ScrollReveal().reveal(".portfolio-grid", { delay: 350 });
+ScrollReveal().reveal(".card-grid", { delay: 350 });
 ScrollReveal().reveal(".sobremi-descripcion", { delay: 350 });
 ScrollReveal().reveal(".sobremi-habilidades", { delay: 350 });
 ScrollReveal().reveal(".contacto-grid", { delay: 350 });
 ScrollReveal().reveal(".inicio-contacto-grid", { delay: 350 });
+ScrollReveal().reveal(".button-cv", { delay: 350 });
+ScrollReveal().reveal(hr, { delay: 350 });

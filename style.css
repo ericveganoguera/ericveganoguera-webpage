@@ -21,7 +21,7 @@ body {
 }
 
 section {
-    padding: 100px 0 100px;
+    padding-top: 100px;
     text-align: center;
     background: white;
 }
@@ -37,7 +37,7 @@ a {
 
 hr {
     border: 1px solid var(--grey);
-    margin: 30px 50% 30px 0; 
+    margin: 30px 50% 30px 0;
 }
 
 .nav-logo {
@@ -165,7 +165,7 @@ hr {
     color: var(--grey);
     font-size: 48px;
     margin-bottom: 30px;
-    text-align: left; 
+    text-align: left;
 }
 
 .seccion-subtitulo {
@@ -192,29 +192,33 @@ hr {
     display: flex;
     justify-content: center;
     gap: 50px;
-    margin: 50px 0 100px;
+    margin-top: 50px;
 }
 
-.button-cv, .nav-button-cv {
+.button-cv,
+.nav-button-cv {
     background-color: var(--red);
     color: #f5f5f5;
     border-radius: 5px;
 }
-.button-cv{
+
+.button-cv {
     padding: 15px 5em;
 }
-.nav-button-cv{
+
+.nav-button-cv {
     padding: 10px;
 }
 
 
-.button-cv:hover, .nav-button-cv:hover {
+.button-cv:hover,
+.nav-button-cv:hover {
     background-color: rgb(101, 29, 29);
     transform: scale(1.1);
 }
 
 
-.habilidad-titulo { 
+.habilidad-titulo {
     color: var(--grey);
     text-align: left;
     margin-bottom: 40px;
@@ -254,77 +258,181 @@ hr {
 
 /* PORTFOLIO */
 
-.portfolio-grid {
+.card-grid {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
-.portfolio-item {
-    position: relative;
-    overflow: hidden;
-    background-color: rgb(41, 41, 41);
-    border-radius: 5%;
-    transition: transform 0.3s;
-    width: 500px;
-    height: 300px;
-    margin: 20px;
-
+.card {
+    background-color: #f5f5f5;
+    overflow:   hidden;
+    
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    width: 300px;
+
+    border: 1px solid grey;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+    transition: transform 0.3s;
+}
+
+.card-header {
+    position: relative;
 
     & img {
         width: 100%;
-        height: auto;
+        height: 300px;
         object-fit: cover;
-        object-position: top;
-    }
-
-    & p {
-        display: none;
-        position: absolute;
-        top: 30%;
-        color: white;
-        font-size: 32px;
-        text-shadow: black 1px 1px 10px;
+        border-radius: 15px 15px 0 0;
+        opacity: 0.8;
     }
 }
 
-.portfolio-item:hover {
-    transition: 0.3s;
-    transform: scale(1.03);
-
-    & img {
-        opacity: 0.5;
-        transition: 0s;
-    }
-
-    & p,
-    .portfolio-links {
-        display: flex;
-    }
+.card-header-title, .card-header-skills p{
+    text-shadow: black 1px 1px 5px ;
+    color: rgb(255, 255, 255);
 }
-
-.portfolio-links {
+.card-header-title {
+    width: 100%;
     position: absolute;
-    top: 50%;
-    display: none;
-    justify-content: space-around;
-    width: 50%;
+    left: 20px;
+    bottom: 50px;
+
+    text-align: left;
+    font-size: 26px;
+}
+
+.card-header-skills {
+    width: 100%;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill-html,
+.skill-css,
+.skill-js,
+.skill-handlebars,
+.skill-react,
+.skill-bootstrap,
+.skill-nodejs {
+    margin-right: 5px;
+    color: white;
+    font-weight: 900;
+}
+.skill-liner {
+    height: 5px;
+    border-radius: 5px;
+}
+
+.skill-html {
+    & .skill-liner {
+        background-color: darkorange;
+    }
+}
+
+.skill-css {
+    & .skill-liner {
+        background-color: lightblue;
+    }
+}
+
+.skill-js {
+    & .skill-liner {
+        background-color: yellow;
+    }
+}
+
+.skill-handlebars {
+    & .skill-liner {
+        background-color: rgb(255, 100, 0);
+    }
+}
+.skill-react {
+    & .skill-liner {
+        background-color: blue;
+    }
+}
+.skill-bootstrap {
+    & .skill-liner {
+        background-color: purple;
+    }
+}
+.skill-nodejs {
+    & .skill-liner {
+        background-color: darkgreen;
+    }
+}
+.card-body {
+    padding: 20px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
 
     & a {
-        background-color: var(--red);
-        padding: 10px 20px;
-        border-radius: 10px;
-        transition: transform 0.3s;
-        text-shadow: black 1px 1px 10px;
+        color: black;
+        font-size: 20px;
+        text-decoration: none;
     }
+}
 
-    & a:hover {
-        background-color: rgb(101, 29, 29);
-        transform: scale(1.1);
-        transition: transform 0.3s;
+.card-footer-link {
+    overflow: hidden;
+    position: relative;
+    height: 30px;
+}
+
+.card-footer-link:hover {
+    & .skill-liner {
+        animation: loading 2s linear infinite;
+    }
+}
+
+.card-footer .skill-liner {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background-color: var(--red);
+    z-index: 1;
+}
+
+.card:hover {
+    transition: transform 0.3s;
+    transform: scale(1.03);
+    & img{
+        opacity: 1;
+    }
+}
+
+
+@keyframes loading {
+    0% {
+        left: 0;
+    }
+    25% {
+        left: 100%;
+    }
+    50%{
+        left: 0;
+    }
+    75% {
+        left: -100%;
+    }
+    100% {
+        left: 0;
     }
 }
 
@@ -449,10 +557,10 @@ footer p {
         place-items: center;
     }
 
-    .habilidad-item{
+    .habilidad-item {
         margin: 8px 0;
     }
-    
+
     .contacto-item {
         -ms-flex: 50%;
         flex: 50%;
