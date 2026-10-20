@@ -1,540 +1,174 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="index, follow" />
-    <meta
-    name="description"
-    content="Me llamo Eric Vega, desarrollador web full stack. Esta es mi pagina web donde encontrareis mis experiencias y proyectos"
-    />
-    
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Eric Vega Noguera - Portfolio" />
-    <meta
-    property="og:description"
-    content="Me llamo Eric Vega, desarrollador web full stack. Esta es mi pagina web donde encontrareis mis experiencias y proyectos"
-    />
-    <meta property="og:image" content="./Assets/profile.webp" />
-    <meta property="og:url" content="https://www.ericveganoguera.com/" />
-    
-    <link rel="canonical" href="https://www.ericveganoguera.com/" />
-    <link rel="icon" type="image/x-icon" href="./Assets/favicon.webp" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <title>Eric Vega Noguera - Portfolio</title>
-  </head>
-
-  <body>
-    <!-- Barra de navegacion -->
-    <nav class="nav-bar">
-      <div class="container">
-        <div class="nav-logo">
-          <p class="nav-title">
-            <a href="#inicio" class="text-hover-red">ERIC</a>
-          </p>
-        </div>
-        <div class="nav-menu">
-          <i class="fa fa-bars"></i>
-        </div>
-        <ul class="ul-links">
-          <li class="ul-link" data-ref="inicio">
-            <a href="#inicio" class="text-hover-red">Inicio</a>
-            <li class="ul-link" data-ref="sobremi">
-              <a href="#sobremi" class="text-hover-red">Sobre mi</a>
-            </li>
-          </li>
-          <li class="ul-link" data-ref="portfolio">
-            <a href="#portfolio" class="text-hover-red">Proyectos</a>
-          </li>
-          <li class="ul-link" data-ref="portfolio">
-            <a href="#habilidades" class="text-hover-red">Habilidades</a>
-          </li>
-          <li class="ul-link" data-ref="contacto">
-            <a href="#contacto" class="text-hover-red">Contacto</a>
-          </li>
-
-          <a
-            href="./Eric-Vega-Espanol.pdf"
-            download="Eric Vega CV Español"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="nav-button-cv"
-          >
-            Descargar CV
-          </a>
-        </ul>
-      </div>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+  <meta name="description" content="Me llamo Èric Vega, desarrollador web full stack. Aquí encontrarás mi experiencia y mis proyectos." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Èric Vega Noguera - Portfolio" />
+  <meta property="og:description" content="Me llamo Èric Vega, desarrollador web full stack. Aquí encontrarás mi experiencia y mis proyectos." />
+  <meta property="og:image" content="https://www.ericveganoguera.com/Assets/profile.webp" />
+  <meta property="og:url" content="https://www.ericveganoguera.com/" />
+  <link rel="canonical" href="https://www.ericveganoguera.com/" />
+  <link rel="icon" type="image/x-icon" href="./Assets/favicon.webp" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=IBM+Plex+Sans:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Èric Vega Noguera - Portfolio</title>
+</head>
+<body>
+  <header class="nav">
+    <a href="#inicio" class="nav-logo">Èric Vega</a>
+    <nav class="nav-links" aria-label="Principal">
+      <a href="#sobremi">Sobre mí</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#contacto">Contacto</a>
     </nav>
-    <!-- Portada Web -->
-    <section class="inicio" id="inicio">
-      <div class="inicio-bg"></div>
-      <picture>
-        <source type="image/webp" srcset="./Assets/profile.webp" />
-        <img class="inicio-perfil" alt="Eric Vega Perfil" />
-      </picture>
+    <a class="btn btn-small" href="./Eric-Vega-Espanol.pdf" download="Eric Vega CV Español">Descargar CV</a>
+  </header>
 
-      <div class="inicio-descripcion">
-        <h1 class="inicio-titulo">Èric Vega</h1>
-        <span class="inicio-titulo-secundario">Desarrollador Full Stack</span>
-        <div class="inicio-contacto-grid">
-          <div class="inicio-contacto-item">
-            <a
-              href="mailto:ericveganoguera@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i class="fa fa-envelope"></i>
-            </a>
-          </div>
-          <div class="inicio-contacto-item">
-            <a
-              href="https://github.com/ericveganoguera"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i class="fa fa-github"></i>
-            </a>
-          </div>
-          <div class="inicio-contacto-item">
-            <a
-              href="https://www.linkedin.com/in/ericveganoguera/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i class="fa fa-linkedin-square"></i>
-            </a>
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-text">
+        <h1>Èric<br />Vega</h1>
+        <p class="hero-role">Desarrollador full stack</p>
+        <p class="hero-lead">Construyo aplicaciones web completas, desde el servidor hasta la pantalla, y modernizo sistemas empresariales que ya funcionan.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#proyectos">Ver proyectos</a>
+          <a class="btn btn-ghost" href="#contacto">Escríbeme</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="./Assets/profile.webp" alt="Retrato de Èric Vega" />
+      </div>
+    </section>
+
+    <section class="section" id="sobremi">
+      <h2>Sobre mí</h2>
+      <div class="about">
+        <p class="about-big">Me gusta trabajar en todas las capas de una aplicación: del diseño de la interfaz a la base de datos.</p>
+        <div class="about-more">
+          <p>Me formé en el bootcamp de Full Stack Web Development de Ironhack y llevo cerca de dos años como desarrollador en empresas industriales, trabajando en un ERP completo: compras, stock, fabricación, ventas y facturación.</p>
+          <p>Ahora mismo migro aplicaciones de VB6 a C# y mantengo sistemas en VB.NET, mientras centro mi carrera en el desarrollo web full stack. Mi último proyecto personal es <a href="https://ericilaia.es" target="_blank" rel="noopener noreferrer">ericilaia.es</a>.</p>
+          <div class="cv-links">
+            <a class="btn" href="./Eric-Vega-Espanol.pdf" download="Eric Vega CV Español">CV en español</a>
+            <a class="btn btn-ghost" href="./Eric-Vega-English.pdf" download="Eric Vega CV English">CV in English</a>
           </div>
         </div>
       </div>
     </section>
-    <section id="sobremi">
-      <div class="container">
-        <h2 class="seccion-titulo">Sobre mi</h2>
-        <hr />
-        <div class="sobremi-descripcion">
-          <p>
-            Apasionado de la tecnología y desarrollo web con una trayectoria
-            sólida y exitosa en la creación de soluciones tecnológicas.
-          </p>
-          <p class="sobremi-descripcion-sub">
-            Me enorgullece poder trabajar en cada capa de una aplicación, lo que
-            me permite diseñar y crear experiencias de usuario excepcionales y
-            construir aplicaciones web completas y funcionales que marquen la
-            diferencia.
-          </p>
-        </div>
-        <div class="download-cv">
-          <a
-            class="button-cv"
-            href="./Eric-Vega-Espanol.pdf"
-            download="Eric Vega CV Español"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Descargar CV
-          </a>
-          <a
-            class="button-cv"
-            href="./Eric-Vega-English.pdf"
-            download="Eric Vega CV English"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Download CV
-          </a>
-        </div>
-        
+
+    <section class="section" id="proyectos">
+      <h2>Proyectos</h2>
+      <div class="projects">
+        <article class="project">
+          <img src="./Assets/spaceshooter.webp" alt="Captura de Space Shooter!" loading="lazy" />
+          <div class="project-info">
+            <h3>Space Shooter!</h3>
+            <p>Mi primer juego con JavaScript, HTML y CSS: una nave que dispara en vertical.</p>
+            <p class="stack">HTML5, CSS3, JavaScript</p>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/ericveganoguera/ProjectGame" target="_blank" rel="noopener noreferrer">Repositorio</a>
+            <a href="https://ericveganoguera.github.io/ProjectGame/" target="_blank" rel="noopener noreferrer">Ver online</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <img src="./Assets/lineupsproject.webp" alt="Captura de Valorant LineUps" loading="lazy" />
+          <div class="project-info">
+            <h3>Valorant LineUps</h3>
+            <p>Consulta lineups, mapas y agentes de Valorant, con una sección para practicar puntería.</p>
+            <p class="stack">Handlebars, Bootstrap, JavaScript</p>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Alex-Eric/LineUpsProject" target="_blank" rel="noopener noreferrer">Repositorio</a>
+            <a href="https://lineups-project.adaptable.app/" target="_blank" rel="noopener noreferrer">Ver online</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <img src="./Assets/fitnessapp.webp" alt="Captura de Fitness App" loading="lazy" />
+          <div class="project-info">
+            <h3>Fitness App</h3>
+            <p>Aplicación con rutinas y herramientas para ayudarte a cumplir tus objetivos de entrenamiento.</p>
+            <p class="stack">Node.js, React, Bootstrap</p>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Alex-Eric/fitness-app-client" target="_blank" rel="noopener noreferrer">Repositorio</a>
+            <a href="https://fitness-app-workouts.netlify.app/" target="_blank" rel="noopener noreferrer">Ver online</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <img src="./Assets/image-uploader.webp" alt="Captura de Image Uploader" loading="lazy" />
+          <div class="project-info">
+            <h3>Image Uploader</h3>
+            <p>Sube una imagen y compártela con quien quieras.</p>
+            <p class="stack">React, HTML5, CSS3</p>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/ericveganoguera/image-uploader" target="_blank" rel="noopener noreferrer">Repositorio</a>
+            <a href="https://upload-your-image.netlify.app/" target="_blank" rel="noopener noreferrer">Ver online</a>
+          </div>
+        </article>
       </div>
     </section>
-    <!-- <section id="portfolio">
-      <div class="container">
-        <h2 class="seccion-titulo">Proyectos</h2>
-        <hr />
-        <div class="portfolio-grid">
-          <div class="portfolio-item">
-            <img src="./Assets/spaceshooter.webp" alt="Space Shooter!" />
-            <p>Space Shooter!</p>
-            <div class="portfolio-links">
-              <a
-                href="https://github.com/ericveganoguera/ProjectGame"
-                target="_blank"
-                alt="Space Shooter! Repository"
-                >Repository</a
-              >
-              <a
-                href="https://ericveganoguera.github.io/ProjectGame/"
-                target="_blank"
-                alt="Space Shooter! Live"
-                >Live</a
-              >
-            </div>
-          </div>
-          <div class="portfolio-item">
-            <img src="./Assets/lineupsproject.webp" alt="LineUps Project" />
-            <p>Valorant LineUps</p>
-            <div class="portfolio-links">
-              <a
-                href="https://github.com/Alex-Eric/LineUpsProject"
-                target="_blank"
-                alt="LineUps Project Repository"
-                >Repository
-              </a>
-              <a
-                href="https://lineups-project.adaptable.app/"
-                target="_blank"
-                alt="LineUps Project Live"
-                >Live
-              </a>
-            </div>
-          </div>
-          <div class="portfolio-item">
-            <img src="./Assets/fitnessapp.webp" alt="Fitness App" />
-            <p>Fitness App</p>
-            <div class="portfolio-links">
-              <a
-                href="https://github.com/Alex-Eric/fitness-app-client"
-                target="_blank"
-                alt="Fitness App Repository"
-                >Repository
-              </a>
-              <a
-                href="https://fitness-app-workouts.netlify.app/"
-                target="_blank"
-                alt="Fitness App Live"
-                >Live
-              </a>
-            </div>
-          </div>
-          <a
-            href="https://github.com/ericveganoguera/calculator"
-            target="_blank"
-            class="portfolio-item"
-            alt="Calculator"
-          >
-            <img src="./Assets/calculator.webp" alt="Calculator"
-          /></a>
-          <div class="portfolio-item">
-            <img src="./Assets/image-uploader.webp" alt="Image Uploader" />
-            <p>Image Uplaoder</p>
-            <div class="portfolio-links">
-              <a
-                href="https://github.com/ericveganoguera/image-uploader"
-                target="_blank"
-                alt="Image Uploader Repository"
-                >Repository
-              </a>
-              <a
-                href="https://upload-your-image.netlify.app/"
-                target="_blank"
-                alt="Image Uploader Live"
-                >Live
-              </a>
-            </div>
+
+    <section class="section" id="habilidades">
+      <h2>Habilidades</h2>
+      <div class="skills">
+        <div class="skill-group">
+          <h3>Frontend</h3>
+          <div class="icons">
+            <img src="./Assets/html5.webp" alt="HTML5" title="HTML5" />
+            <img src="./Assets/css3.webp" alt="CSS3" title="CSS3" />
+            <img src="./Assets/ts.webp" alt="TypeScript" title="TypeScript" />
+            <img src="./Assets/React.webp" alt="React" title="React" />
           </div>
         </div>
-      </div>
-    </section>-->
-    <section id="portfolio">
-      <div class="container">
-        <h2 class="seccion-titulo">Proyectos</h2>
-        <hr />
-        <div class="card-grid">
-            <!-- Card -->
-            <div class="card">
-              <div class="card-header">
-                <img src="./Assets/spaceshooter.webp" alt="Space Shooter!" />
-                <div class="card-header-title">
-                  <h3 class="card-title text-white">Space Shooter!</h3>
-                </div>
-
-                <div class="card-header-skills">
-                  <div class="skill-html">
-                    <p>HTML5</p>
-                    <div class="skill-liner"></div>
-                  </div>
-                  <div class="skill-css">
-                    <p>CSS3</p>
-                    <div class="skill-liner"></div>
-                  </div>
-                  <div class="skill-js">
-                    <p>JavaScript</p>
-                    <div class="skill-liner"></div>
-                  </div>
-                </div>
-              </div>
-        
-              <div class="card-body">
-                <p class="card-text">This is my first game with Javascript, HTML and CSS
-
-                  It's a vertical spaceship shooter!</p>
-              </div>
-        
-              <div class="card-footer">
-                <div class="card-footer-link">
-                  <a
-                    href="https://github.com/ericveganoguera/ProjectGame"
-                    target="_blank"
-                    alt="Space Shooter! Repository"
-                    >Repository</a
-                  >
-                  <div class="skill-liner"></div>
-                </div>
-                <div class="card-footer-link">
-                  <a
-                    href="https://ericveganoguera.github.io/ProjectGame/"
-                    target="_blank"
-                    alt="Space Shooter! Live"
-                    >Live</a
-                  >
-                  <div class="skill-liner"></div>
-                </div>
-                
-              </div>
-            </div>
-            <!-- Card -->
-            <div class="card">
-              <div class="card-header">
-                <img src="./Assets/lineupsproject.webp" alt="LineUps Project" />
-                <div class="card-header-title">
-                  <h3 class="card-title text-white">Valorant LineUps</h3>
-                </div>
-
-                <div class="card-header-skills">
-                  <div class="skill-handlebars">
-                    <p>HandleBars</p>
-                    <div class="skill-liner"></div>
-                  </div>
-                  <div class="skill-bootstrap">
-                    <p>Bootstrap</p>
-                    <div class="skill-liner"></div>
-                  </div>
-                  <div class="skill-js">
-                    <p>JavaScript</p>
-                    <div class="skill-liner"></div>
-                  </div>
-                </div>
-              </div>
-        
-              <div class="card-body">
-                <p class="card-text">In this web page you can see a lot information from Valorant like: Lineups, Maps, Agents and Aim practice </p>
-              </div>
-        
-              <div class="card-footer">
-                <div class="card-footer-link">
-                  <a
-                href="https://github.com/Alex-Eric/LineUpsProject"
-                target="_blank"
-                alt="LineUps Project Repository"
-                >Repository
-              </a>
-                  <div class="skill-liner"></div>
-                </div>
-                <div class="card-footer-link">
-                  <a
-                href="https://lineups-project.adaptable.app/"
-                target="_blank"
-                alt="LineUps Project Live"
-                >Live
-              </a>
-                  <div class="skill-liner"></div>
-                </div>
-                
-              </div>
-            </div>
-            <!-- Card -->
-            <div class="card">
-              <div class="card-header">
-                <img src="./Assets/fitnessapp.webp" alt="Fitness App" />
-                <div class="card-header-title">
-                  <h3 class="card-title text-white">Fitness App</h3>
-                </div>
-
-                <div class="card-header-skills">
-                  <div class="skill-nodejs">
-                    <p>NodeJS</p>
-                    <div class="skill-liner"></div>
-                  </div>
-                  <div class="skill-react">
-                    <p>React</p>
-                    <div class="skill-liner"></div>
-                  </div>
-                  <div class="skill-bootstrap">
-                    <p>Bootstrap</p>
-                    <div class="skill-liner"></div>
-                  </div>
-                </div>
-              </div>
-        
-              <div class="card-body">
-                <p class="card-text">This fitness app provides a variety of features to help you achieve your fitness goals</p>
-              </div>
-        
-              <div class="card-footer">
-                <div class="card-footer-link">
-                  <a
-                href="https://github.com/Alex-Eric/fitness-app-client"
-                target="_blank"
-                alt="Fitness App Repository"
-                >Repository
-              </a>
-                  <div class="skill-liner"></div>
-                </div>
-                <div class="card-footer-link">
-                  <a
-                href="https://fitness-app-workouts.netlify.app/"
-                target="_blank"
-                alt="Fitness App Live"
-                >Live
-              </a>
-                  <div class="skill-liner"></div>
-                </div>
-                
-              </div>
-            </div>
-            <!-- Card -->
-            <div class="card">
-              <div class="card-header">
-                <img src="./Assets/image-uploader.webp" alt="Image Uploader" />
-                <div class="card-header-title">
-                  <h3 class="card-title text-white">Image Uplaoder</h3>
-                </div>
-
-                <div class="card-header-skills">
-                  <div class="skill-react">
-                    <p>React</p>
-                    <div class="skill-liner"></div>
-                  </div>
-                  <div class="skill-html">
-                    <p>HTML5</p>
-                    <div class="skill-liner"></div>
-                  </div>
-                  <div class="skill-css">
-                    <p>CSS3</p>
-                    <div class="skill-liner"></div>
-                  </div>
-                </div>
-              </div>
-        
-              <div class="card-body">
-                <p class="card-text">Simple website to upload your image and share with everybody!</p>
-              </div>
-        
-              <div class="card-footer">
-                <div class="card-footer-link">
-                  <a
-                href="https://github.com/ericveganoguera/image-uploader"
-                target="_blank"
-                alt="Image Uploader Repository"
-                >Repository
-              </a>
-                  <div class="skill-liner"></div>
-                </div>
-                <div class="card-footer-link">
-                  <a
-                href="https://upload-your-image.netlify.app/"
-                target="_blank"
-                alt="Image Uploader Live"
-                >Live
-              </a>
-                  <div class="skill-liner"></div>
-                </div>
-                
-              </div>
-            </div>
+        <div class="skill-group">
+          <h3>Backend</h3>
+          <div class="icons">
+            <img src="./Assets/NodeJS.webp" alt="Node.js" title="Node.js" />
+            <img src="./Assets/Expressjs.webp" alt="Express.js" title="Express.js" />
+          </div>
         </div>
-      </div>
-    </section> 
-    <section id="habilidades" class="sobremi-habilidades">
-      <div class="container">
-        <h2 class="seccion-titulo">Habilidades y lenguajes</h2>
-        <hr>
-        <div class="habilidad-grid">
-          <div class="habilidad-item">
-            <h2>Frontend</h2>
-            <hr />
-            <div class="icon-grid">
-              <i><img src="./Assets/html5.webp" alt="HTML5 icon" /></i>
-              <i><img src="/Assets/css3.webp" alt="CSS3 icon" /></i>
-              <i><img src="/Assets/ts.webp" alt="TypeScript icon" /></i>
-              <i><img src="/Assets/React.webp" alt="React icon" /></i>
-            </div>
+        <div class="skill-group">
+          <h3>Bases de datos</h3>
+          <div class="icons">
+            <img src="./Assets/MySQL.webp" alt="MySQL" title="MySQL" />
+            <img src="./Assets/MongoDB.webp" alt="MongoDB" title="MongoDB" />
+            <img src="./Assets/Postgresql.webp" alt="PostgreSQL" title="PostgreSQL" />
           </div>
-          <div class="habilidad-item">
-            <h2>Backend</h2>
-            <hr />
-            <div class="icon-grid">
-              <i><img src="/Assets/NodeJS.webp" alt="NodeJS icon" /></i>
-              <i><img src="/Assets/Expressjs.webp" alt="Expressjs icon" /></i>
-            </div>
-          </div>
-          <div class="habilidad-item">
-            <h2>Database</h2>
-            <hr />
-            <div class="icon-grid">
-              <i><img src="/Assets/MySQL.webp" alt="MySQL icon" /></i>
-              <i><img src="/Assets/MongoDB.webp" alt="MongoDB icon" /></i>
-              <i><img src="/Assets/Postgresql.webp" alt="MongoDB icon" /></i>
-            </div>
-          </div>
-          <div class="habilidad-item">
-            <h2>Testing</h2>
-            <hr />
-            <div class="icon-grid">
-              <i><img src="/Assets/rspec.webp" alt="RSpec icon" /></i>
-            </div>
+        </div>
+        <div class="skill-group">
+          <h3>Testing</h3>
+          <div class="icons">
+            <img src="./Assets/rspec.webp" alt="RSpec" title="RSpec" />
           </div>
         </div>
       </div>
     </section>
-    <section id="contacto">
-      <div class="container">
-        <h2 class="seccion-titulo">Contacto</h2>
-        <hr />
-        <div class="contacto-grid">
-          <div class="contacto-item">
-            <a
-              href="mailto:ericveganoguera@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i class="fa fa-envelope" style="font-size: 64px"></i>
-              <p>Correo</p>
-            </a>
-          </div>
-          <div class="contacto-item">
-            <a
-              href="https://github.com/ericveganoguera"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i class="fa fa-github" style="font-size: 64px"></i>
-              <p>GitHub</p>
-            </a>
-          </div>
-          <div class="contacto-item">
-            <a
-              href="https://www.linkedin.com/in/ericveganoguera/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i class="fa fa-linkedin-square" style="font-size: 64px"></i>
-              <p>LinkedIn</p>
-            </a>
-          </div>
-        </div>
+
+    <section class="section contact" id="contacto">
+      <h2>¿Hablamos?</h2>
+      <p class="contact-lead">Cuéntame qué necesitas y te respondo lo antes posible.</p>
+      <a class="contact-mail" href="mailto:ericveganoguera@gmail.com">ericveganoguera@gmail.com</a>
+      <div class="contact-social">
+        <a href="https://github.com/ericveganoguera" target="_blank" rel="noopener noreferrer"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
+        <a href="https://www.linkedin.com/in/ericveganoguera/" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a>
       </div>
     </section>
-    <footer>
-      <div className="container">
-        <p>2023 Èric. All rights reserved.</p>
-      </div>
-    </footer>
-    <script async src="./index.js"></script>
-  </body>
+  </main>
+
+  <footer>
+    <p>© 2026 Èric Vega Noguera</p>
+  </footer>
+  <script src="./index.js" defer></script>
+</body>
 </html>
