@@ -86,6 +86,28 @@ main, footer { position: relative; z-index: 1; }
 .cvs a:hover { background-size: 100% 4px; color: var(--accent); }
 .stack { padding: 5px 14px; border: 1px solid var(--line); border-radius: 999px; font-size: .88rem; width: fit-content; }
 
+/* TRAYECTORIA */
+.path { list-style: none; position: relative; padding-left: 40px; }
+.path::before, .path::after { content: ""; position: absolute; left: 7px; top: 8px; bottom: 8px; width: 2px; }
+.path::before { background: var(--line); }
+.path::after { background: var(--accent); transform-origin: top; }
+@supports (animation-timeline: view()) { .path::after { transform: scaleY(0); animation: draw linear both; animation-timeline: view(); animation-range: entry 25% cover 70%; } @keyframes draw { to { transform: scaleY(1); } } }
+.path > li { position: relative; display: grid; grid-template-columns: 190px 1fr; gap: 12px 40px; padding-bottom: 64px; }
+.path > li:last-child { padding-bottom: 0; }
+.path > li::before { content: ""; position: absolute; left: -40px; top: 7px; width: 16px; height: 16px; border-radius: 50%; background: var(--bg); border: 2px solid var(--line); transition: .5s; }
+.path > li.in::before { border-color: var(--accent); background: var(--accent); box-shadow: 0 0 0 6px color-mix(in srgb, var(--accent) 22%, transparent); }
+.when b { display: block; font-family: var(--display); font-size: 1.25rem; letter-spacing: -.02em; }
+.when span { color: var(--muted); font-size: .92rem; }
+.path h3 { font-size: clamp(1.8rem, 3.4vw, 2.7rem); letter-spacing: -.04em; margin-bottom: 8px; }
+.org { font-weight: 600; color: var(--accent); }
+.org span { color: var(--muted); font-weight: 400; }
+.ctx { color: var(--muted); max-width: 38em; margin: 10px 0 20px; }
+.lbl { color: var(--muted); letter-spacing: .14em; text-transform: uppercase; font-size: .75rem; margin-bottom: 8px; }
+.hl { list-style: none; margin-bottom: 20px; }
+.hl li { position: relative; padding-left: 18px; margin-bottom: 6px; max-width: 40em; }
+.hl li::before { content: ""; position: absolute; left: 0; top: .62em; width: 6px; height: 6px; background: var(--accent); }
+.tech { font-size: .9rem; color: var(--muted); border-top: 1px solid var(--line); padding-top: 12px; max-width: 40em; }
+
 /* PROYECTOS */
 .rows { border-top: 1px solid var(--line); }
 .row { display: grid; grid-template-columns: 56px 200px 1fr auto; gap: 28px; align-items: center; padding: 28px 8px; border-bottom: 1px solid var(--line); transition: opacity .3s, padding .3s; }
@@ -156,6 +178,8 @@ footer a:hover { color: var(--accent); }
   .row .n { display: none; }
   .thumb { width: 100%; height: 200px; }
   .about { grid-template-columns: 1fr; }
+  .path > li { grid-template-columns: 1fr; }
+  .when { display: flex; gap: 12px; align-items: baseline; flex-wrap: wrap; }
   .statement { position: static; }
   .idx > li { grid-template-columns: 1fr; gap: 10px; }
   .idx h3 { padding-top: 0; }
@@ -166,5 +190,6 @@ footer a:hover { color: var(--accent); }
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .reveal { opacity: 1; transform: none; }
+  .path::after { transform: scaleY(1); }
   .w > span { transform: none; }
 }
