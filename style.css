@@ -70,7 +70,7 @@ main, footer { position: relative; z-index: 1; }
 
 /* SOBRE MI */
 .about { display: grid; grid-template-columns: 1fr 1.05fr; gap: 24px clamp(32px, 6vw, 96px); align-items: start; }
-.statement { position: sticky; top: 130px; font-family: var(--display); font-weight: 500; font-size: clamp(1.9rem, 4.2vw, 3.4rem); line-height: 1.1; letter-spacing: -.035em; }
+.statement { font-family: var(--display); font-weight: 500; font-size: clamp(1.9rem, 4.2vw, 3.4rem); line-height: 1.1; letter-spacing: -.035em; }
 .statement em { font-size: 1.12em; }
 .facts { display: grid; grid-template-columns: minmax(96px, auto) 1fr; column-gap: 28px; }
 .facts dt, .facts dd { border-top: 1px solid var(--line); padding: 28px 0; }
@@ -180,7 +180,6 @@ footer a:hover { color: var(--accent); }
   .about { grid-template-columns: 1fr; }
   .path > li { grid-template-columns: 1fr; }
   .when { display: flex; gap: 12px; align-items: baseline; flex-wrap: wrap; }
-  .statement { position: static; }
   .idx > li { grid-template-columns: 1fr; gap: 10px; }
   .idx h3 { padding-top: 0; }
   .go { flex-direction: row; flex-wrap: wrap; gap: 12px 22px; align-items: center; }
