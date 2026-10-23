@@ -16,6 +16,7 @@ Desarrollador de software con casi 3 años de experiencia en entorno industrial 
 
 ### Proyectos
 
+- [Grano y Taza](https://granoytaza.es)
 - [Boda Laia & Èric](https://ericilaia.es)
 - [Fitness App](https://fitness-app-workouts.netlify.app/)
 - [Valorant LineUps](https://lineups-project.adaptable.app/)
