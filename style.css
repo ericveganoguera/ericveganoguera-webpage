@@ -120,7 +120,7 @@ main, footer { position: relative; z-index: 1; }
 .info p { color: var(--muted); max-width: 40em; margin-bottom: 12px; }
 .stack { color: var(--accent); }
 .go { display: flex; flex-direction: column; gap: 10px; align-items: flex-end; }
-.go a { display: inline-flex; align-items: center; gap: 4px; font-weight: 500; border-bottom: 2px solid transparent; transition: .2s; }
+.go a { display: inline-flex; align-items: center; gap: 4px; font-weight: 500; white-space: nowrap; border-bottom: 2px solid transparent; transition: .2s; }
 .go a:first-child { border-color: var(--accent); }
 .go a:hover { color: var(--accent); }
 .peek { position: fixed; z-index: 25; left: 0; top: 0; width: 300px; height: 190px; border-radius: 18px; pointer-events: none; opacity: 0; scale: .8; background: center / cover no-repeat; border: 1px solid var(--line); box-shadow: 0 24px 60px rgba(0, 0, 0, .5); transition: opacity .25s, scale .25s; display: grid; place-items: center; font: 800 3.4rem var(--display); color: #fff; }
@@ -183,7 +183,7 @@ footer a:hover { color: var(--accent); }
   .statement { position: static; }
   .idx > li { grid-template-columns: 1fr; gap: 10px; }
   .idx h3 { padding-top: 0; }
-  .go { flex-direction: row; gap: 22px; align-items: center; }
+  .go { flex-direction: row; flex-wrap: wrap; gap: 12px 22px; align-items: center; }
   .glow { display: none; }
 }
 @media (prefers-reduced-motion: reduce) {
