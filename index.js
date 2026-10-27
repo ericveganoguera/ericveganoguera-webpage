@@ -48,22 +48,6 @@ if (matchMedia("(hover: hover) and (pointer: fine)").matches) {
     el.addEventListener("pointerleave", () => (el.style.transform = ""));
   });
 
-  // Vista previa flotante de proyectos
-  const peek = $(".peek");
-  $$(".row").forEach((row) => {
-    const img = $("img.thumb", row);
-    row.addEventListener("pointerenter", () => {
-      peek.classList.toggle("cover", !img);
-      peek.textContent = img ? "" : "L & È";
-      peek.style.backgroundImage = img ? `url("${img.currentSrc || img.src}")` : "";
-      peek.classList.add("show");
-    });
-    row.addEventListener("pointermove", (e) => {
-      peek.style.left = `${e.clientX + 24}px`;
-      peek.style.top = `${e.clientY - 95}px`;
-    });
-    row.addEventListener("pointerleave", () => peek.classList.remove("show"));
-  });
 }
 
 // Copiar email
